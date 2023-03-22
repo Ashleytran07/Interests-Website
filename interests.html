@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            background-color:rgba(0,0,0, 0.5);
+        }
+        h2{
+            color: midnightblue;
+        }
+        #header {
+            background-image:url('img/pho.png');
+            background-size: cover;
+            height: 500px;
+            justify-content: center;
+            text-align: center;
+            color: #FFF;
+			font-size: 1.5em;
+			text-align: center;
+			line-height: 500px;
+			text-shadow: 0px 0px 10px #000;
+
+        }
+        #main
+        {
+            width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+            padding: 15px;
+            position: center;
+            justify-content: center;
+            background-color: tan;
+        }
+        .img{
+            height: 150px;
+            float: right;  
+            padding: 15px;
+        }
+
+        .contents {
+            clear: both;
+        }
+
+
+        #sidebar {
+            width: 200px;
+            float: left;            
+            align-items: center;
+            background-color: rosybrown;
+            justify-content: center;
+        }
+        #wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+            justify-content: center;
+            margin-left: auto;
+			margin-right: auto;
+        }
+
+        /* sidebar images*/
+        .thumbnail{
+            width: 150px;
+            height: auto;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            position: center;
+            margin-left: 25px;
+        }
+
+        .thumbnail:hover{
+			opacity: 1;
+		}
+        .thumbnail + p {
+			text-align: center;
+			visibility: hidden;
+		}
+
+		.thumbnail:hover + p {
+			display: block;
+			visibility: visible;
+		}
+        #nav a{
+			text-decoration: none;
+			color: #444;
+			/* background-color: gold; */
+			/* 
+				810px / 5 
+				=162px per nav item
+			*/
+			width: 162px;
+			height: 50px;
+			display: block;
+
+			/* to center things horizontally */
+			text-align: center;
+			line-height: 50px;
+			border-bottom: 2px solid #FFF;
+		}
+
+        #nav a:hover {
+			border-bottom: 2px solid #900;
+			color: peru;
+		}
+		#nav {
+			display: flex;
+			justify-content: center;
+			box-shadow: 0px 10px 15px #CCC;
+		}
+
+        #footer{
+            background-color: #777;
+            color: white;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: green;
+
+        }
+   
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Food</h1>
+        <!-- <img src="img/pho.png" alt="Pho"> -->
+    </div>
+
+    <div id="nav">
+		<a href="interests.html">Home</a>
+        <a href="interests.html#matcha-head">Matcha</a>
+		<a href="interests.html#taco-head">Tacos</a>
+		<a href="#sushi-head">Sushi</a>
+	</div>
+
+    <div id="wrapper">
+
+        <div id="main">
+
+            <h2 id="matcha-head" class="matcha">Matcha</h2>
+                <img class ="img" src="img/matcha.jpeg" alt="matcha">
+                <h3 class="matcha">Matcha is my favorite drink. I make it every morning. All you need is a teaspoon of ceremonial grade matcha, a teaspoon of agave nectar, a teaspoon of hot water, and a cup of oat milk!
+                    Matcha is a type of powdered green tea that's rich in antioxidants. With traditional green tea, the leaves are steeped in hot water and then discarded. But with matcha, the dried leaves are actually 
+                    ground into a powder, mixed into the drink, and consumed. The tea has a unique, non-bitter taste and vibrant green color and is 
+                    regarded as the most aromatic form of green tea (health, 2022).
+                </h3>
+
+            <div class= "contents">
+            <h2 id="taco-head" class="tacos">Tacos</h2>
+                <img class ="img" src="img/tacos.png" alt="tacos">
+                <h3 class="tacos">My favorite taco place is called Tacos Tamix. They specialize in al pastor tacos and have a great ambiance outisde! Great spot for USC students as it's in the fryft zone! Some trucks think soft globs of reddish pork, warmed momentarily on a griddle, suffices. Others keep their offering drier and more crumbly, letting fiery salsa rojas take center stage. But without the vertical spit, pressed tightly with marinated pork and topped with a large chunk of pineapple, you'd be hard-pressed to find al pastor worth the late-night calories.
+                </h3>
+            </div>
+
+            <div class= "contents">
+            <h2 id="sushi-head" id="sushi">Sushi</h2>
+                <img class ="img" src="img/sushi.png" alt="sushi">
+                <h3>Tenno sushi is the best sushi spot in Little Tokyo in my opinion. My friends and I go there almost every weekend. Their bio says "Tenno Sushi is a high quality restaurant for Lunch & Dinner. We strive to provide a fresh new taste for busy "On the go" people, who want a healtheir & tastier meal. Tenno Sushi catering promise that our chef's wouldn't think of pre-making sushi. It's all made to order every order. We welcome phone ahead, take out and catering orders. Please visit us often, bring you friends and family, and experience the joy that is Tenno Sushi."</h3>
+            </div>
+
+        </div> <!--main-->
+
+
+        <div id="sidebar">
+            <!-- <h2>Sidebar</h2> -->
+
+			<div class= "img-container">
+                <img class="thumbnail" src="img/sushi2.png" alt="Sushi">
+                <p>Sushi</p></div>	
+                
+                <div class= "img-container">
+                <img class="thumbnail" src="img/ramen-nagi.png" alt="Ramen">
+                <p>Ramen</p></div>
+                
+                <div class= "img-container">
+                <img class="thumbnail" src="img/sando.jpeg" alt="Sando">
+                <p>Sando</p></div>
+            </div>
+        </div> 	<!-- end of sidebar -->
+
+        <div id="footer">
+            University of Southern California &copy; 2023 by Ashley Tran
+        </div> <!-- footer -->
+
+
+    </div> <!--wrapper-->
+</body>
+</html>
